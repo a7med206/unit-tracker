@@ -1,0 +1,15 @@
+<div ngbDropdown class="d-inline-block" ngbDropdownAutoClose="outside">
+  <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle>Units List</button>
+  <div ngbDropdownMenu  aria-labelledby="dropdownConfig" class="units-list" (mousewheel)="onScroll($event)">
+    <button *ngFor="let item of unites" ngbDropdownItem (click)="selectItem($event,item)"
+            class="unit">
+      <input type="checkbox" class="col-2" [checked]="item.selected">
+      <div class="unit-name col-4">{{ item.name }}</div>
+      <div class="coords col-6">
+        <span>{{ item.lat }}</span>
+        <span class="text-bold"> , </span>
+        <span>{{ item.lng }}</span>
+      </div>
+    </button>
+  </div>
+</div>

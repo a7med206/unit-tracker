@@ -1,0 +1,29 @@
+.units-list {
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1100;
+  width: 225px;
+  transform: translate(-60px, 40px) !important;
+
+  .unit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    .unit-name {
+      font-weight: bold;
+    }
+
+    span.text-bold {
+      font-weight: bold;
+    }
+
+  }
+
+}
