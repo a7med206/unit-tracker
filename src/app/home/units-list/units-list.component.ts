@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Unit } from '../../models/unit';
+import { Unit } from '../../../models/unit';
 
 @Component({
   selector: 'app-units-list',

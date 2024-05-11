@@ -1,0 +1,12 @@
+<div class="map" leaflet [leafletOptions]="options" [leafletLayers]="layers()"
+[leafletPanOptions]="panOptions"
+>
+  <!-- [leafletLayersControl]="layersControl" -->
+  <div class="overlay">
+    <!-- Your overlay content goes here -->
+    <input type="text" class="form-control" placeholder="Search" #search>
+    <app-units-list [items]="units | async"></app-units-list>
+  </div>
+
+
+</div>
