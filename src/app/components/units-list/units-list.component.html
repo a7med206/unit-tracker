@@ -1,15 +1,25 @@
-<div ngbDropdown class="d-inline-block" ngbDropdownAutoClose="outside">
-  <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle>Units List</button>
-  <div ngbDropdownMenu  aria-labelledby="dropdownConfig" class="units-list" (mousewheel)="onScroll($event)">
-    <button *ngFor="let item of unites" ngbDropdownItem (click)="selectItem($event,item)"
-            class="unit">
-      <input type="checkbox" class="col-2" [checked]="item.selected">
-      <div class="unit-name col-4">{{ item.name }}</div>
-      <div class="coords col-6">
-        <span>{{ item.lat }}</span>
-        <span class="text-bold"> , </span>
-        <span>{{ item.lng }}</span>
+<button type="button" class="btn btn-outline-secondary me-2" placement="end" [ngbPopover]="list"
+        ngbPopover="What a great tip!" [autoClose]="false" triggers="manual" triggers="click"
+        #p="ngbPopover" popoverClass="custom-popover"
+        >
+  Units List
+</button>
+
+<ng-template #list>
+  <div class="units-list" (mousewheel)="onScroll($event)">
+    <div *ngFor="let item of units" class="unit">
+      <div class="unit-icon col-2">
+        <img src="{{ item.iconUrl }}" alt="Unit Icon" class="unit-icon-img">
       </div>
-    </button>
+      <div class="unit-details col-10">
+        <div class="unit-name">{{ item.name }}</div>
+        <div class="coords">
+          <span>lat: {{ item.lat }}</span><br>
+          <!-- <span class="text-bold"> , </span> -->
+          <span>lng: {{ item.lng }}</span>
+        </div>
+        <div class="unit-id">ID: {{ item.id }}</div>
+      </div>
+    </div>
   </div>
-</div>
+</ng-template>

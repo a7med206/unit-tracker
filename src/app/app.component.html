@@ -2,10 +2,9 @@
   <!-- [leafletLayersControl]="layersControl" -->
   <div class="overlay">
     <!-- Your overlay content goes here -->
-    <input type="text" class="form-control" placeholder="Search">
-    <app-units-list [items]="units"></app-units-list>
+    <input type="text" class="form-control" placeholder="Search" #search>
+    <app-units-list [items]="units | async"></app-units-list>
   </div>
-  <!-- units list -->
 
 
 </div>

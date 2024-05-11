@@ -1,5 +1,6 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Unit } from '../../models/unit';
 
 @Component({
   selector: 'app-units-list',
@@ -8,25 +9,22 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbDropdownConfig]
 })
 export class UnitsListComponent implements OnInit {
-  @Input() items: any[] = [];
-  unites: any[] = [];
+  @Input() items?: Unit[] | null = [];
+  @ViewChild('p') popOver: any;
+  units: Unit[] | null = [];
 
   selectedItems: any[] = [];
   constructor(config: NgbDropdownConfig) {
     config.placement = 'bottom-start';
     config.autoClose = false;
-  }
 
-  selectItem(e: Event, item: any) {
-    e.stopPropagation();
-    e.preventDefault();
-    item.selected = !item.selected;
-    if (item.selected) this.selectedItems.push(item);
-    else this.selectedItems = this.selectedItems.filter(selectedItem => selectedItem.id !== item.id);
   }
 
   ngOnInit(): void {
 
+  }
+  ngAfterViewInit(): void {
+    this.popOver.open();
   }
 
   onScroll(e: Event) {
@@ -34,12 +32,11 @@ export class UnitsListComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    // filter items to get only units that's not in units array
-    this.items.forEach(item => {
-      const index = this.unites.findIndex(unit => unit.id === item.id);
-      if (index === -1) this.unites.push({ ...item, selected: false });
-
-    });
+    // filter items to get only units that's been added to the map
+    if (this.items) {
+      this.units = this.items?.filter((item) => item.selected);
+      if (this.units.length === 0) this.units = this.items;
+    }
 
   }
 

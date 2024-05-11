@@ -1,7 +1,6 @@
+import { Layer, Marker } from "leaflet";
 
 export interface CustomMarker {
-  lat?: number;
-  lng?: number;
-  label?: string;
-  iconUrl?: string;
+  [key: string]: Marker;
 }
+

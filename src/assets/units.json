@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Unit 1",
+    "lat": 30.047,
+    "lng": 31.244,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+  },
+  {
+    "name": "Unit 2",
+    "lat": 30.045,
+    "lng": 31.238,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 3",
+    "lat": 30.048,
+    "lng": 31.243,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 4",
+    "lat": 30.054,
+    "lng": 31.242,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 5",
+    "lat": 30.048,
+    "lng": 31.244,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  },
+  {
+    "name": "Unit 6",
+    "lat": 30.051,
+    "lng": 31.244,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+  },
+  {
+    "name": "Unit 7",
+    "lat": 30.05,
+    "lng": 31.236,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 8",
+    "lat": 30.045,
+    "lng": 31.237,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 9",
+    "lat": 30.049,
+    "lng": 31.236,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 10",
+    "lat": 30.046,
+    "lng": 31.245,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  },
+  {
+    "name": "Unit 11",
+    "lat": 30.049,
+    "lng": 31.237,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
+  },
+  {
+    "name": "Unit 12",
+    "lat": 30.045,
+    "lng": 31.245,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+  },
+  {
+    "name": "Unit 13",
+    "lat": 30.051,
+    "lng": 31.245,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 14",
+    "lat": 30.05,
+    "lng": 31.241,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 15",
+    "lat": 30.05,
+    "lng": 31.24,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 16",
+    "lat": 30.045,
+    "lng": 31.242,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 17",
+    "lat": 30.054,
+    "lng": 31.243,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 18",
+    "lat": 30.051,
+    "lng": 31.239,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 19",
+    "lat": 30.053,
+    "lng": 31.238,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 20",
+    "lat": 30.053,
+    "lng": 31.241,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 21",
+    "lat": 30.054,
+    "lng": 31.245,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 22",
+    "lat": 30.052,
+    "lng": 31.24,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 23",
+    "lat": 30.053,
+    "lng": 31.243,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+  },
+  {
+    "name": "Unit 24",
+    "lat": 30.053,
+    "lng": 31.24,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 25",
+    "lat": 30.049,
+    "lng": 31.237,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+  },
+  {
+    "name": "Unit 26",
+    "lat": 30.052,
+    "lng": 31.239,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+  },
+  {
+    "name": "Unit 27",
+    "lat": 30.052,
+    "lng": 31.237,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Unit 28",
+    "lat": 30.046,
+    "lng": 31.238,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png"
+  },
+  {
+    "name": "Unit 29",
+    "lat": 30.049,
+    "lng": 31.244,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
+  },
+  {
+    "name": "Unit 30",
+    "lat": 30.05,
+    "lng": 31.238,
+    "iconUrl": "http://maps.google.com/mapfiles/ms/icons/pink-dot.png"
+  }
+]

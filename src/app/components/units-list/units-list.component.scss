@@ -1,29 +1,100 @@
+::ng-deep .custom-popover {
+  max-width: 300px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+  height: 450px;
+  inset: 180px auto auto 0 !important;
+
+
+}
+
+// scroll bar
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 26px;
+  height: 26px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #b0b0b0;
+}
+
+::-webkit-scrollbar-track {
+  background: #c2c1c1;
+  border: 0px none #ffffff;
+  border-radius: 92px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #c2c1c1;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .units-list {
   max-height: 400px;
   overflow-y: auto;
   z-index: 1100;
   width: 225px;
-  transform: translate(-60px, 40px) !important;
 
   .unit {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5rem;
+    padding: 5px;
     border-bottom: 1px solid #ccc;
 
     &:hover {
       background-color: #f9f9f9;
     }
 
-    .unit-name {
-      font-weight: bold;
+    .unit-icon {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      .unit-icon-img {
+        width: 30px;
+        height: auto;
+      }
     }
 
-    span.text-bold {
-      font-weight: bold;
+    .unit-details {
+      flex: 9;
     }
+  }
 
+
+  .unit-name {
+    font-weight: bold;
+  }
+
+  span.text-bold {
+    font-weight: bold;
   }
 
 }
