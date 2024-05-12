@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3  # Checkout the repository code
       - name: Use Node.js 20
-        uses: actions/setup-node@v3\4
+        uses: actions/setup-node@v4
         with:
           node-version: 20  # Adjust Node.js version if needed
       - name: Install dependencies
