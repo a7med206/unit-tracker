@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbAlertModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UnitsListComponent } from './home/units-list/units-list.component';
 
 @NgModule({
   declarations: [

@@ -10,6 +10,8 @@ import { Unit } from '../models/unit';
 export class UnitsService {
 
   constructor(private http: HttpClient) { }
+
+
   getUnits(): Observable<Unit[]> {
     return this.http.get<Unit[]>('assets/units.json');
   }
@@ -96,18 +98,16 @@ export class UnitsService {
   }
 
 
-  // o	Implement a function to generate random latitude and longitude offsets within a specified range (e.g., +/- 0.001 degrees).
   generateRandomOffset(): number {
     return Math.random() * (0.001 - -0.001) + -0.001;
   }
 
 
-  // o	Employ a timer (e.g., setInterval) to update each unit's position at random intervals between 2 and 5 seconds.
   updateUnitPosition(unit: Unit, marker: any): void {
-      const newLat = unit.lat + this.generateRandomOffset();
-      const newLng = unit.lng + this.generateRandomOffset();
-      unit.lat = newLat;
-      unit.lng = newLng;
-      marker.setLatLng([newLat, newLng]);
+    const newLat = unit.lat + this.generateRandomOffset();
+    const newLng = unit.lng + this.generateRandomOffset();
+    unit.lat = newLat;
+    unit.lng = newLng;
+    marker.setLatLng([newLat, newLng]);
   }
 }
