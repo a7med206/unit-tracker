@@ -1,0 +1,21 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]  # Run on pushes to the main branch (adjust as needed)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run on Ubuntu virtual machines
+    steps:
+      - uses: actions/checkout@v3  # Checkout the repository code
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16  # Adjust Node.js version if needed
+      - name: Install dependencies
+        run: npm install  # Install project dependencies
+      - name: Build the project
+        run: ng build --configuration=production  # Build for production
+      - name: Run unit tests
+        run: ng test  # Run unit tests
