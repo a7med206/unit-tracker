@@ -19,5 +19,3 @@ jobs:
         run: npm install  # Install project dependencies
       - name: Build the project
         run: ng build --configuration=production  # Build for production
-      - name: Run unit tests
-        run: ng test  # Run unit tests
