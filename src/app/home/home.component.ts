@@ -44,11 +44,6 @@ export class HomeComponent implements OnInit {
   markerMap = signal<{ [id: string]: Marker }>({});
   layers = computed(() => Object.values(this.markerMap()));
   units = new BehaviorSubject<Unit[]>([]);
-  panOptions = {
-    animate: true,
-    duration: 10,
-    easeLinearity: 0.25,
-  }
 
   constructor(private unitsService: UnitsService) {
     effect(() => {
