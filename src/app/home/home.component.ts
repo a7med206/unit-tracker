@@ -37,7 +37,6 @@ export class HomeComponent implements OnInit {
       }),
     ],
     zoom: 15,
-    // center is Cairo, Egypt
     center: latLng(30.049, 31.242),
   };
 
