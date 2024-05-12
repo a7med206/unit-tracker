@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest  # Run on Ubuntu virtual machines
     steps:
-      - uses: actions/checkout@v3  # Checkout the repository code
+      - uses: actions/checkout@v4  # Checkout the repository code
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
