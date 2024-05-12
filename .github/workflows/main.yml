@@ -8,11 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest  # Run on Ubuntu virtual machines
     steps:
-      - uses: actions/checkout@v3  # Checkout the repository code
+      - uses: actions/checkout@v4  # Checkout the repository code
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: 20  # Adjust Node.js version if needed
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli@17.0.0  # Install Angular CLI 17
       - name: Install dependencies
         run: npm install  # Install project dependencies
       - name: Build the project
